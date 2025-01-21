@@ -1,0 +1,33 @@
+html {
+    background-color: #1b262c;
+    color: #dbe2ef;
+    font-size: 16px;
+}
+h1 {
+    font-size: 4.5em;
+}
+body {
+    margin: 0px
+}
+
+.welcome {
+    margin: 0px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+.lineSpacer {
+    border: 1px solid #ffffff;
+    margin-bottom: 24px;
+}
+.pagesContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:start;
+}
+.pagesCard {
+    width: 30vw;
+    height: 40vh;
+    text-align: center;
+}

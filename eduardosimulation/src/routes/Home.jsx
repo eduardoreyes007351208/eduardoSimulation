@@ -1,8 +1,10 @@
-import React, {useEffect, useState} from 'react'
-import './Home.css'
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Home.css";
 
 const Home = () => {
-    const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Fetch data from the public/data/pages.json file
@@ -16,29 +18,30 @@ const Home = () => {
       });
   }, []);
 
+  const handleCardClick = (id) => {
+    navigate(`/project/${id}`);
+  };
+
   return (
     <>
-        <h1 className='welcome'>Welcome to Eduardo's Simulation</h1>
-        <div className='lineSpacer'></div>
-        <a href="/project">Project</a>
-        <div className='pagesContainer'>
-            {data.map((page, index) => (
-                <a href='/project' key={index}>
-                    <div className='pagesCard'>
-                        <h2>{page.projectName}</h2>
-                        <div>
-                            <p>{page.p1}</p>
-                        </div>
-                        <div>
-                            <p>{page.p2}</p>
-                        </div>
-                    </div>
-                </a>
-            ))}
-        </div>
-        
+      <h1 className="welcome">Welcome to Eduardo's Simulation</h1>
+      <div className="lineSpacer"></div>
+      <div className="pagesContainer">
+        {data.map((page, index) => (
+          <div
+            className="pagesCard"
+            onClick={() => handleCardClick(page.id)}
+            key={page.id}
+          >
+            <h2>{page.projectName}</h2>
+            <div>
+              <p>{page.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

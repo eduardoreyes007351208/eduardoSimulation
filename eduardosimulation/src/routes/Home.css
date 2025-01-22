@@ -4,7 +4,7 @@ html {
     font-size: 16px;
 }
 h1 {
-    font-size: 4.5em;
+    font-size: 4.5rem;
 }
 body {
     margin: 0px
@@ -13,6 +13,7 @@ body {
 .welcome {
     margin: 0px;
     padding-bottom: 24px;
+    padding-top: 16px;
     text-align: center;
 }
 .lineSpacer {
@@ -25,9 +26,23 @@ body {
     flex-direction: row;
     justify-content:space-evenly;
     align-items:start;
+    margin-top: 32px;
 }
 .pagesCard {
     width: 30vw;
-    height: 40vh;
-    text-align: center;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #3282B8;
+    padding: 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.pagesCard:hover {
+    cursor: pointer;
+    background-color: #dbe2ef;
+    color: #1b262c;
+    scale: 1.025;
 }

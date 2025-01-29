@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: #dbe2ef;
+}
+
 .projectPage {
     width: 100vw;
     height: 100vh;
@@ -7,5 +12,52 @@
     align-items: center;
 }
 .paragraphContainers {
-    width: 45vw;
+    width: 55vw;
+}
+.button {
+    color: #dbe2ef;
+    background-color: #3282B8;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    color: #1b262c;
+    background-color: #dbe2ef;
+    scale: 1.10;
+    cursor: pointer;
+}
+.paragraphs {
+    width: 70vw;
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textbox {
+    width: 40vw;
+}
+.images {
+    width: 50vw;
+    border: 4px solid #dbe2ef;
+    border-radius: 5px;
+}
+
+.date {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #3282B8;
+    margin: 0px;
+}
+.paratext {
+    font-size: 1.5rem;
+}
+.heading {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #3282B8;
 }

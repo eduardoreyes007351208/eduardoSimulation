@@ -3,22 +3,51 @@
       "id": "1",
       "projectName": "Eduardo's Simulation",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis auctor odio, et vulputate augue. Nam pretium placerat lacus, a convallis est vulputate at. Pellentesque venenatis elit ut erat faucibus, quis consequat metus interdum. Praesent lorem neque, sodales in vulputate ut, elementum eu dolor. Donec sit amet feugiat nisi. Nulla.",
-      "p1": "Lorem ipsum odor amet, consectetuer adipiscing elit. Curabitur conubia ornare sit sagittis suscipit a sodales convallis. Pellentesque ridiculus orci ullamcorper augue class consectetur montes interdum lorem. Blandit gravida efficitur sagittis per magna nulla magnis interdum. Dictumst laoreet eleifend blandit, metus urna morbi commodo cursus. Blandit accumsan tincidunt dignissim leo proin parturient; consectetur curae. Pulvinar leo dignissim dolor primis pharetra ante. Blandit sed vitae duis conubia penatibus; ex id eleifend. Scelerisque finibus interdum curabitur sociosqu gravida?",
-      "p2": "Diam nibh fames maecenas fusce finibus convallis dis platea. Felis iaculis quis elit bibendum sapien; ligula lorem rhoncus curae. Parturient lectus accumsan turpis praesent dolor nam tortor blandit parturient. Litora mattis aliquet pharetra mollis penatibus lacus mus bibendum facilisi. Commodo tempus rutrum hac parturient dictum. Conubia tincidunt gravida praesent vehicula nunc."
-    },
-    {
-      "id": "2",
-      "projectName": "Game Tracker",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada scelerisque sapien, ac efficitur metus commodo eget. Vestibulum sit amet odio nec massa volutpat vestibulum. Phasellus scelerisque vel metus id viverra. Curabitur efficitur tellus non risus euismod, at lacinia nunc ultrices. Curabitur congue neque id leo aliquam, vitae rutrum nisl.",
-      "p1": "Lorem ipsum odor amet, consectetuer adipiscing elit. Id leo nullam facilisis nec lacinia. Potenti quam interdum viverra vitae placerat mollis dignissim vitae. Convallis sagittis in morbi ad nostra per integer posuere. Nulla purus fermentum taciti; augue purus cras etiam. Sollicitudin lectus nisi sociosqu, placerat tincidunt praesent conubia.",
-      "p2": "Velit tempor tellus scelerisque integer natoque varius ante. Augue enim egestas lectus mattis senectus, etiam turpis. Commodo faucibus integer vulputate sollicitudin quisque. Commodo maximus duis ut integer faucibus quis vestibulum adipiscing. Hendrerit himenaeos luctus dapibus magna dapibus nibh curabitur id. Vivamus egestas molestie phasellus mollis venenatis. Enim convallis magna eget ridiculus nec justo fringilla habitasse."
-    },
-    {
-      "id": "3",
-      "projectName": "Tom",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis sed quam a varius. Curabitur gravida vitae turpis ac mollis. Curabitur sagittis vel risus ac aliquet. Duis a nisi dignissim, hendrerit massa vitae, gravida massa. Vivamus molestie lacus non nulla accumsan consectetur. Quisque at porta enim, sed gravida nibh. Class. ",
-      "p1": "Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus mi auctor odio primis primis. Aptent est mus dis litora porta. Dignissim nisl nunc laoreet, placerat sit tincidunt vel. Adipiscing sem at est donec odio volutpat dictumst ad. Odio quam accumsan eu eget viverra potenti. Nec mollis hac conubia pharetra fusce dis duis.",
-      "p2": "Viverra vehicula euismod eros maecenas dui lacinia. Nascetur inceptos nisl nisi sed lectus primis neque sit. Aenean purus primis lacus penatibus libero porta ultrices dui vulputate. In netus neque posuere commodo leo feugiat tristique mauris. Cubilia placerat netus ad cubilia parturient libero dapibus lobortis. Porttitor lacus adipiscing quisque ultricies velit fringilla nullam. Felis amet facilisi lectus ullamcorper inceptos placerat."
+      "thumbnail": "/images/edsim/updatedHomescreen.png",
+      "paragraphs": [
+        {
+          "date": "1.20.2025",
+          "p1": "I tried to look for the best color palettel for the website. I wanted a blue color so after trying out different combinations, this is what I ended up liking:",
+          "heading": "Option 1:"
+        },
+        {
+          "heading": "Option 2:"
+        },
+        {
+          "p1": "I think I'm going to go with Option 2 for now. Once I figure out a way to add dark and light mode, I'll use both color palletes.",
+          "p2": "This is the mock up of the website design:",
+          "heading": "Main Page:"
+        },
+        {
+          "heading": "Project Journal:"
+        },
+        {
+          "date": "1.21.2025",
+          "p1": "For today, I worked on getting the routing situation working. I was able to get it to route to the correct pages and then I worked on the main page. I have it showing 'Welcome to Eduardo's Lair' and I worked on having a map that displays all the projects that are stored locally on a JSON file. The next thing I want to work on tomorrow is to have the page change dynamically depending on which card is clicked."
+        },
+        {
+          "date": "1.22.2025",
+          "p1": "Today, I worked on getting the JSON files to have an id, which allowed me to have it where whenever I click on the project card, it'll take me to a project page that has the information for whichever project I clicked on. It's working and on the project page, there's a home button that takes me back. I also worked on the CSS of the main page and got it looking better."
+        },
+        {
+          "date": "1.28.2025",
+          "p1": "Today, I continued to work on the home page, adding a thumbnail that shows a preview of what the project is. Within the JSON file, I organized the structure so that it has the name of the project, short description, thumbnail path, paragraphs, and image paths. The paragraph and image path are containers that hold each individual paragraph that corresponds to its image. In the Project.jsx file, I have it so that it maps through all the paragraphs in the paragraph container and then displays the image. Depending on if the paragraph text from the JSON is a date, paragraph text, or heading, the font size and font style changes along with the font weight. I also added all the screenshots of what the progress of the project looks like and all together, this is what the project looks like so far. I also deployed the website through Vercel so I can access it.",
+          "heading":"Main Page:"
+        },
+        {
+          "heading": "Project Journal:"
+        }
+      ],
+      "images": [
+        ["/images/edsim/color1a.png", "/images/edsim/color1b.png"], 
+        ["/images/edsim/color2a.png", "/images/edsim/color2b.png"],
+        ["/images/edsim/mainPageDraft.png"],
+        ["/images/edsim/jornalPageDraft.png"],
+        ["/images/edsim/mainPageV1.png"],
+        ["/images/edsim/updatedHomescreen.png", "/images/edsim/projectPageV1.png"],
+        ["/images/edsim/mainPageV2.png"],
+        ["/images/edsim/projectPageV2a.png", "/images/edsim/projectPageV2b.png"]
+      ]
     }
   ]
   

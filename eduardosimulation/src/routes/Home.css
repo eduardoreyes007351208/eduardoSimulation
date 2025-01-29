@@ -6,11 +6,14 @@ html {
 h1 {
     font-size: 4.5rem;
 }
+h2 {
+    font-size: 3rem;
+}
 body {
     margin: 0px
 }
 
-.welcome {
+.welcomeText {
     margin: 0px;
     padding-bottom: 24px;
     padding-top: 16px;
@@ -29,12 +32,13 @@ body {
     margin-top: 32px;
 }
 .pagesCard {
-    width: 30vw;
-    height: 30vh;
+    width: 25vw;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
     background-color: #3282B8;
     padding: 16px;
     border-radius: 25px;
@@ -45,4 +49,13 @@ body {
     background-color: #dbe2ef;
     color: #1b262c;
     scale: 1.025;
+}
+.pagesCard h3 {
+    font-size: 2.5rem;
+    margin: 8px;
+}
+.image {
+    height: 30vh;
+    width: 20vw;
+    border-radius: 25px;
 }

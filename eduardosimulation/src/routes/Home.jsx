@@ -24,8 +24,9 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="welcome">Welcome to Eduardo's Simulation</h1>
+      <h1 className="welcomeText">Welcome to Eduardo's Simulation</h1>
       <div className="lineSpacer"></div>
+      <h2 className="welcomeText">Projects</h2>
       <div className="pagesContainer">
         {data.map((page, index) => (
           <div
@@ -33,7 +34,8 @@ const Home = () => {
             onClick={() => handleCardClick(page.id)}
             key={page.id}
           >
-            <h2>{page.projectName}</h2>
+            <h3>{page.projectName}</h3>
+            <img className="image" src={page.thumbnail} alt="thumbnail" />
             <div>
               <p>{page.description}</p>
             </div>
